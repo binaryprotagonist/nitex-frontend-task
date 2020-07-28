@@ -1,0 +1,510 @@
+$color: #fff;
+$colorblack: #000;
+$bg: #39abbe;
+
+body
+{
+  overflow-x: hidden;
+}
+p
+{
+  font-family: 'Lato', sans-serif !important;
+}
+h1,h2,h3
+{
+  font-family: 'Poppins', sans-serif !important;
+}
+ul li a
+{
+  font-family: 'Lato', sans-serif;
+}
+input::placeholder
+{
+  font-family: 'Lato', sans-serif !important;
+  font-size: 13px;
+}
+
+.navbar-brand
+{
+  label.color_1 {
+    font-weight: bold;
+    letter-spacing: -4px;
+    font-size: 30px;
+    line-height: 0;
+    color: #F08265;
+}
+
+label.color_s {
+    color: #39abbe;
+}
+}
+
+
+a.nav-link.custom_anchor2 {
+  background: #39ABBE;
+  color: #fff !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  font-size: 14px !important;
+  font-weight: bold;
+  border: 2px solid #39abbe;
+  transition: all 500ms ease 0s;
+
+}
+a.nav-link.custom_anchor2:hover
+{
+  background-color: transparent !important;
+  color: #39abbe !important;
+
+}
+
+// media
+
+/* Using plain CSS */
+@media (min-width: 768px) {
+  
+}
+
+/* Using SCSS variables to store breakpoints */
+$breakpoint-tablet: 768px;
+@media (min-width: $breakpoint-tablet) {
+  ul.navbar-nav.mr-auto.under_navber li a {
+    color: #767676;
+    font-size: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: unset;
+    margin-top: -5px;
+}
+
+
+}
+
+
+
+a.nav-link.custom_anchor {
+  border: 2px solid #39abbe;
+  color: #39abbe !important;
+  font-size: 14px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  font-size: 14px !important;
+  font-weight: bold;
+  margin-right: 21px;
+  transition: all 500ms ease 0s;
+
+  
+}
+a.nav-link.custom_anchor:hover
+{
+  background-color: #39abbe !important;
+  color: #fff !important;
+}
+
+.img 
+{
+  img
+  {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-top: -140px;
+    
+  }
+}
+
+h1.heaf {
+  text-align: center;
+  padding-top: 70px;
+  font-weight: bold;
+  -webkit-text-stroke: 2.5px;
+  letter-spacing: 4px;
+  font-size: 50px;
+  color: #eace13;
+  line-height: 0.7;
+  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2.5s; /* don't forget to set a duration! */
+}
+
+h1.codepen {
+  text-align: center;
+  /* padding-top: 80px; */
+  font-weight: bold;
+  -webkit-text-stroke: 2.5px;
+  letter-spacing: 4px;
+  font-size: 50px;
+  color: #2C2B42;
+  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2.5s; /* don't forget to set a duration! */
+}
+
+.container-fluid.box_1 {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: #39abbe;
+  color: #fff;
+  
+
+  h1
+  {
+    line-height: 40px;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: unset;
+    -webkit-text-stroke: 1px;
+  }
+  p
+  {
+    
+    padding-left: 320px;
+    padding-right: 320px;
+    padding-top: 20px;
+
+  }
+}
+
+button.btn_book {
+  margin-right: 30px;
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  margin-top: 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #39abbe;
+  background: #fff;
+}
+button.more {
+  margin-right: 30px;
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #fff;
+  margin-top: 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #fff;
+  background: transparent;
+}
+
+.contact
+{
+background-color: #fff;
+margin: 0 auto;
+text-align: center;
+padding-top: 60px;
+padding-bottom: 60px;
+
+h1
+  {
+    line-height: 40px;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: unset;
+    -webkit-text-stroke: 0.3px;
+  }
+  p
+  {
+    
+    padding-left: 320px;
+    padding-right: 320px;
+    padding-top: 20px;
+
+  }
+  form
+  {
+    margin-top: 65px;
+  }
+  input.form_col {
+    width: 70%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border: 1px solid #767676;
+}
+input.btn_sub {
+  display: block;
+  margin-left: 80px;
+  height: 45px;
+  width: 150px;
+  border-radius: 0;
+  border: none;
+  background: #39abbe;
+  color: #fff;
+  font-weight: bold;
+}
+img
+{
+  width: 400px;
+}
+}
+
+.footer {
+  background: #423f3f;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  color: $color;
+
+}
+
+#jq_search {
+  text-align: center;
+  margin: 48px 0;
+  input[type="search"] {
+      padding: 12px;
+      width: 400px;
+      height: 48px;
+      margin-right: -3px;
+      border-radius: 0;
+  }
+  input[type="submit"] {
+      width: 68px;
+      height: 48px;
+      background: #333;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      opacity: 0.5;
+      transtion: 0.4s;
+      color: #EEE;
+      + {
+          input {
+              background-position: top left;
+          }
+      }
+      &:hover {
+          opacity: 1;
+      }
+  }
+}
+#shortcuts-zone {
+  margin: 0 auto;
+  max-width: 630px;
+}
+.search-block{
+  display: flex;
+  flex-direction: row;
+  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2.5s; /* don't forget to set a duration! */
+  .search2{
+      border-left: 0;
+      border-right: 0;
+      
+      &:focus{
+          border: 1px solid red;
+          border-right: 0px;
+          border-left: 0px;
+          outline: none;
+          box-shadow: none;
+      }
+  }
+
+  input.btn_search {
+    padding-left: 35px;
+    padding-right: 35px;
+    background: #39abbe;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+    font-weight: bold;
+    width: 140px;
+}
+
+  
+  .search3{
+      border-left: 0;
+  }
+  input{
+      width: 100px;
+      border-radius: 0;
+      border: 1px solid;
+      border-color: #aaaaaa;
+      padding-left: 15px;
+  }
+  input.date {
+    width: 100px;
+    text-align: left;
+    border-right: 0;
+}
+
+input.date::placeholder {
+    text-align: left;
+    padding-left: 18px;
+    font-weight: 550;
+   
+}
+input::placeholder
+{
+  font-weight: 550 !important;
+}
+input
+{
+  font-size: 13px;
+}
+
+input.guests {
+  border-left: none;
+}
+}
+
+ul.under_footer li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul.under_footer li a {
+  color: #bbb5b5;
+}
+
+// .animate__animated .animate__fadeInLeft
+// {
+//   animation-duration: 3s; /* don't forget to set a duration! */
+// }
+
+.box_location {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  font-size: 24px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  text-align: center;
+  border-radius: 50px;
+  color: #e4e40e;
+  line-height: 2;
+}
+
+h1.head_summer {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 45px;
+  -webkit-text-stroke-width: 0.2px;
+  font-size: 36px;
+}
+
+.img_1
+{
+  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5s; /* don't forget to set a duration! */
+  overflow: hidden;
+  transition: all 1500ms ease 0s;
+}
+img.img-fluid.img_1:hover {
+  transform: scale(1.1);
+}
+
+.box_animation {
+  background: #fff !important;
+  // box-shadow: 0px 0px 10px 5px rgba(0,0,0,.1);
+  // padding: 10px;
+  transition: all 500ms ease 0s;
+  margin-bottom: 25px;
+  transform-origin:  left;
+
+  &:hover
+  {
+    transform-origin:  left;
+    transform: scale(1.2);
+    transform-origin:  left;
+    z-index: 9999;
+    
+
+    button.btn_book1
+    {
+      display: block;
+    }
+    h1.head_line {
+      color: #e4e40e;
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+  }
+
+  h1.head_line {
+    color: #e4e40e;
+}
+  button.btn_book1 {
+    background: #39abbe;
+    border: none;
+    color: #fff;
+    height: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    position: relative;
+    top: 4px;
+    display: none;
+    font-weight: bold;
+    display: none;
+    border-radius: 4px;
+}
+   
+
+  h1
+  {
+    font-size: 18px;
+    line-height: 1;
+    padding-top: 15px;
+    padding-bottom: 5px;
+   
+  }
+  p
+  {
+    font-size: 13px;
+    color: #767676;
+    line-height: 1.2;
+  }
+  img
+  {
+    
+    margin-left: 15px;
+    margin-top: 18px;
+
+  }
+}
+
+.border-left_1 {
+  border-left: 3px dotted #e0d5d5;;
+}
+
+h1.head_line {
+  line-height: 42px;
+}
+
+h1.head {
+  font-size: 27px;
+  -webkit-text-stroke: 0.5px;
+  padding-bottom: 0px;
+}
+
+p.para_priny {
+  font-size: 14px;
+  padding-bottom: 20px;
+  color: #767676;
+  line-height: 22px;
+  padding-right: 29px;
+}
+
+.animation_top
+{
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5s; /* don't forget to set a duration! */
+}
+
+.animation_top2
+{
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 10s; /* don't forget to set a duration! */
+}
+
+.animation_top3
+{
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 15s; /* don't forget to set a duration! */
+}
+
