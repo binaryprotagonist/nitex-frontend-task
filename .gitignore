@@ -21,3 +21,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+back/api/doc
+back/api/coverProfiles
+back/server
+frontend/deployLive.sh
+frontend/deploy.sh
+frontend-v2/deploy.sh
+.vscode/launch.json
+back/deploy.sh

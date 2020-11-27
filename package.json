@@ -1,37 +1,59 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "trustloop",
+  "version": "2.6.0",
+  "license": "MIT",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "axios": "^0.19.2",
+    "bootstrap": "^4.3.1",
+    "classnames": "^2.2.6",
+    "core-js": "^3.1.4",
+    "css-loader": "^3.5.3",
+    "daterangepicker": "^3.1.0",
+    "dotenv": "^8.2.0",
+    "enzyme": "^3.10.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router-config": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1",
+    "reactstrap": "^8.7.1"
+  },
+  "Dependencies": {
+    "css-loader": "^3.5.3",
+    "less-loader": "^6.0.0",
+    "react-scripts": "^3.0.1",
+    "style-loader": "^1.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-dev": "dotenv -e .env.development react-scripts build",
     "test": "react-scripts test",
+    "test:cov": "npm test -- --coverage --watchAll=false",
+    "test:debug": "react-scripts --inspect-brk test --runInBand",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 9",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/*index.js",
+      "!src/serviceWorker.js",
+      "!src/polyfill.js"
     ]
+  },
+  "engines": {
+    "node": ">=8.10",
+    "npm": ">=6"
   }
 }

@@ -1,26 +1,27 @@
-import React, {Component} from 'react'
-import './App.scss';
-import Navbar from './component/Navbar';
-import Home from './component/Home/Home';
-import Footer from './component/Footer'
-// import ScrollAnimation from 'react-animate-on-scroll';
+import React from "react";
+import "./App.css";
+import Home from "./Components/Home/Home";
+import { HashRouter, Route, Switch } from "react-router-dom";
+const Defaultlayout = React.lazy(() => import("./container/defaultlayout"));
 
-
-class App extends Component {
-   render ()
-   {
-        return(
-          <div className="App">
-          <div className="" style={{ position: 'relative' }}>
-            <Navbar />
-
-            <Home />
-            <Footer/>
-          </div>
-        </div>
-         )
-    }
+const loading = () => (
+  <div className="animated fadeIn pt-1 text-center">Loading...</div>
+);
+function App() {
+  return (
+    <HashRouter>
+      {/* <ReactNotification /> */}
+      <React.Suspense fallback={loading()}>
+        <Switch>
+          <Route
+            path="/"
+            name=""
+            render={(props) => <Defaultlayout {...props} />}
+          />
+        </Switch>
+      </React.Suspense>
+    </HashRouter>
+  );
 }
-
 
 export default App;
